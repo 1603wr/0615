@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/lib/require.js"></script>
+    <script>
+        require(['js/main'], function() {
+            require(['index'])
+        })
+    </script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <a href="javascript:;">已处理</a>
+            <a href="javascript:;">待处理</a>
+
+        </header>
+        <section>
+            <div class="cont">
+                <div class="list-one">
+
+                </div>
+                <div class="list-two">
+
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <a href="./page/message.html" class="fix">我要报修</a>
+        </footer>
+    </div>
+    <script type="text/x-handlebars-template" class="han">
+        {{#each data}}
+
+        <ul>
+            <li>
+                <em>报修门禁:{{address}}</em>
+            </li>
+            <li>
+                <em>原因:{{cause}}</em>
+            </li>
+            <li>
+                <em>报修时间:{{#showtime datetime}}{{/showtime}}</em>
+            </li>
+        </ul>
+
+        {{/each}}
+    </script>
+</body>
+
+</html>

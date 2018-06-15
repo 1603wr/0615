@@ -1,0 +1,66 @@
+@import "common.scss";
+.wrap,
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    padding: pxTorem(5px) pxTorem(5px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    flex: 1;
+    h2 {
+        width: 100%;
+        height: pxTorem(45px);
+        line-height: pxTorem(45px);
+        font-weight: 200;
+        font-size: pxTorem(14px);
+    }
+    .text-box {
+        width: 100%;
+        height: pxTorem(150px);
+        border: 1px solid #ccc;
+    }
+    .cont-box {
+        width: 100%;
+        height: pxTorem(112px);
+        display: flex;
+        align-items: center;
+        padding-top: pxTorem(15px);
+        padding-left: pxTorem(10px);
+        box-sizing: border-box;
+        .left {
+            width: 30%;
+            font-size: pxTorem(15px);
+        }
+        .rig {
+            flex: 1;
+            flex-shrink: 0;
+            i {
+                display: inline-block;
+                width: pxTorem(70px);
+                height: pxTorem(20px);
+                border: 1px solid pink;
+                border-radius: 10px;
+                font-size: pxTorem(14px);
+            }
+        }
+    }
+    .h3 {
+        width: 100%;
+        height: pxTorem(45px);
+        line-height: pxTorem(45px);
+        font-size: pxTorem(14px);
+    }
+    .inp {
+        width: 100%;
+        height: pxTorem(50px);
+        font-size: pxTorem(14px);
+    }
+}

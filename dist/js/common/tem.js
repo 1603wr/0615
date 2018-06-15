@@ -1,0 +1,1 @@
+define(["handlebars","jquery"],function(o){return function(e,n,r){var t=o.compile(e);o.registerHelper("showtime",function(e){return new Date(e).toLocaleString()});var i=t(n);r.html(i)}});
